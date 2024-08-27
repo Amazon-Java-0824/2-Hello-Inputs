@@ -185,6 +185,59 @@ Create a simple program that asks the user for their name, age, and favorite hob
 
 Remember to test your code thoroughly to ensure it handles all user inputs gracefully. Good luck!
 
+# Hangman Game Exercise
+
+## Objective
+
+Create a simple Hangman game in Java. The player must guess the letters in a hidden word within a limited number of attempts.
+
+## Instructions
+
+### Setup
+
+1. **Create an Array of Words**:  
+   - Prepare an array of words that the game will choose from.
+   
+2. **Randomly Select a Target Word**:  
+   - Randomly select one word from the array to be the target word.
+   
+3. **Represent the Target Word**:  
+   - Use an array of characters (`char[]`) to represent the letters of the target word.
+   
+4. **Display the Current State**:  
+   - Create another array of characters to display the current state of the word with blanks (e.g., `_ _ _ _`).
+
+### User Input
+
+1. **Reading the Player's Guess**:  
+   - Use the `Scanner` class to read the player's guess.
+   - The player should guess one letter at a time.
+
+### Game Logic
+
+1. **Handling a Correct Guess**:  
+   - If the guessed letter is in the word, reveal its position(s) in the display array.
+   
+2. **Handling an Incorrect Guess**:  
+   - If the guessed letter is not in the word, decrease the number of remaining attempts.
+   
+3. **Repeat the Process**:  
+   - Continue until the player either guesses the word or runs out of attempts.
+
+### String Methods and Loops
+
+1. **Looping for Guesses**:  
+   - Use loops to repeatedly prompt the player for guesses.
+   
+2. **String Handling**:  
+   - Use string methods like `.charAt()` to handle the player's input and `.equals()` to check if the word is fully guessed.
+
+### End of Game
+
+1. **Winning or Losing**:  
+   - Display a message when the player correctly guesses the word or when they lose, showing the correct word.
+
+
 # File Reader and File Writer
 
 ## Introduction to File Reader and File Writer
