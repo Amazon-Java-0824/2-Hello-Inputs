@@ -618,3 +618,213 @@ Encoding the file...
 
 File encoded successfully! The encoded file is saved as example_encoded.txt
 ```
+
+
+# Java Classes
+
+## Introduction to Java Classes
+Java classes are the foundation of object-oriented programming in Java. They serve as blueprints for creating objects, which are instances of a class. Classes encapsulate data for the object and methods to manipulate that data, providing a powerful way to structure and organize code.
+
+## Why Use Java Classes?
+Using Java classes helps you:
+- Organize code into logical, reusable units
+- Implement encapsulation, hiding internal details and exposing only what's necessary
+- Create modular and maintainable code
+- Model real-world objects and concepts in your programs
+- Implement inheritance and polymorphism for more flexible and extensible code
+
+## Basic Concepts of Java Classes
+A Java class typically consists of:
+- Fields (also called attributes or properties)
+- Methods (functions that operate on the data)
+- Constructors (special methods for initializing objects)
+- Access modifiers (to control visibility and accessibility)
+
+## Access Modifiers
+Access modifiers in Java control the visibility and accessibility of classes, methods, and variables. The four main access modifiers are:
+
+1. **public**: Accessible from any other class.
+2. **protected**: Accessible within the same package and by subclasses.
+3. **default** (no modifier): Accessible only within the same package.
+4. **private**: Accessible only within the same class.
+
+Example:
+```java
+public class MyClass {
+    public int publicVar;
+    protected int protectedVar;
+    int defaultVar;
+    private int privateVar;
+
+    public void publicMethod() { /* ... */ }
+    protected void protectedMethod() { /* ... */ }
+    void defaultMethod() { /* ... */ }
+    private void privateMethod() { /* ... */ }
+}
+```
+
+## Final Keyword
+The `final` keyword in Java is used to create constants and prevent inheritance, method overriding, and variable reassignment.
+
+1. **Final Variables**: Cannot be reassigned after initialization.
+2. **Final Methods**: Cannot be overridden by subclasses.
+3. **Final Classes**: Cannot be inherited.
+
+Example:
+```java
+public final class Constants {
+    public static final double PI = 3.14159;
+    
+    public final void printMessage() {
+        System.out.println("This method cannot be overridden.");
+    }
+}
+```
+
+## Static Keyword
+The `static` keyword is used to create class-level members (variables and methods) that belong to the class rather than instances of the class.
+
+1. **Static Variables**: Shared across all instances of a class.
+2. **Static Methods**: Can be called without creating an instance of the class.
+
+Example:
+```java
+public class Counter {
+    private static int count = 0;
+    
+    public static void incrementCount() {
+        count++;
+    }
+    
+    public static int getCount() {
+        return count;
+    }
+}
+```
+
+## Classes and Objects
+A class is a blueprint for creating objects. Objects are instances of a class.
+
+Example:
+```java
+public class Car {
+    private String model;
+    private int year;
+    
+    public Car(String model, int year) {
+        this.model = model;
+        this.year = year;
+    }
+    
+    public void displayInfo() {
+        System.out.println("Model: " + model + ", Year: " + year);
+    }
+}
+
+// Creating an object
+Car myCar = new Car("Toyota Camry", 2022);
+myCar.displayInfo();
+```
+
+## Inheritance
+Inheritance allows a class to inherit properties and methods from another class. The `extends` keyword is used to create a subclass.
+
+Example:
+```java
+public class Vehicle {
+    protected String brand;
+    
+    public void honk() {
+        System.out.println("Honk honk!");
+    }
+}
+
+public class Car extends Vehicle {
+    private int numberOfDoors;
+    
+    public Car(String brand, int numberOfDoors) {
+        this.brand = brand;
+        this.numberOfDoors = numberOfDoors;
+    }
+}
+```
+
+## Constructors
+Constructors are special methods used to initialize objects. They have the same name as the class and no return type.
+
+Example:
+```java
+public class Person {
+    private String name;
+    private int age;
+    
+    // Default constructor
+    public Person() {
+        name = "Unknown";
+        age = 0;
+    }
+    
+    // Parameterized constructor
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+```
+
+## Polymorphism
+Polymorphism allows objects of different classes to be treated as objects of a common superclass. It can be achieved through method overriding and method overloading.
+
+1. **Method Overriding**: Subclass provides a specific implementation for a method defined in its superclass.
+2. **Method Overloading**: Multiple methods in the same class with the same name but different parameters.
+
+Example:
+```java
+public class Animal {
+    public void makeSound() {
+        System.out.println("The animal makes a sound");
+    }
+}
+
+public class Dog extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("The dog barks");
+    }
+    
+    // Method overloading
+    public void makeSound(int times) {
+        for (int i = 0; i < times; i++) {
+            System.out.println("Woof!");
+        }
+    }
+}
+
+// Polymorphism in action
+Animal myAnimal = new Dog();
+myAnimal.makeSound(); // Outputs: The dog barks
+```
+
+## Important Notes on Java Classes
+- Always use meaningful names for classes, following the CamelCase convention (e.g., `CarFactory`, not `carfactory`).
+- Keep classes focused on a single responsibility to improve maintainability.
+- Use access modifiers judiciously to implement encapsulation.
+- Consider using interfaces and abstract classes for more flexible designs.
+- Be cautious with inheritance; favor composition over inheritance when appropriate.
+- Always provide appropriate constructors for your classes.
+
+
+## Practice Exercise: Library Management System (20 minutes)
+Create a simple library management system using Java classes.
+
+### Task Description:
+1. Create a `Book` class with properties like title, author, and ISBN.
+2. Create a `Library` class that can add books, remove books, and display all books.
+3. Use appropriate access modifiers, constructors, and methods.
+4. In the `main` method, demonstrate the usage of your classes by adding books to the library, removing a book, and displaying the library contents.
+
+### Bonus Challenges (if time permits):
+1. Implement a `searchBooks` method in the `Library` class that can search for books by title or author.
+2. Add a `borrowBook` method that marks a book as borrowed and prevents it from being borrowed again until it's returned.
+
+Remember to apply the concepts of encapsulation, constructors, and method design we've discussed. Good luck!
