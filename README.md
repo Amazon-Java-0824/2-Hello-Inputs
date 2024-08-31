@@ -376,6 +376,15 @@ Create a program that allows the user to write notes to a file and then read the
 2. **Timestamp Notes:** Modify the program to add a timestamp to each note before saving it to the file.
 
 Remember to test your program thoroughly to handle various inputs and scenarios gracefully. Good luck!
+Here’s a detailed exercise prompt for your bootcamp students:
+
+---
+
+### Weekend optional exercise: File Encoder and Decoder Console Program
+
+**Objective:**  
+Your task is to create a console-based program that encodes and decodes text files. This program will prompt the user to choose whether they want to encode or decode a file and then perform the selected operation. You are free to design the encoding and decoding algorithms as you see fit, as long as the encoding process is reversible by your decoding process.
+
 
 # Java Methods
 
@@ -536,3 +545,72 @@ Create a simple calculator program with methods for addition, subtraction, multi
 2. **Floating-Point Operations:** Overload the methods to handle floating-point operations by accepting `double` parameters.
 
 Remember to test your methods thoroughly to ensure they handle all expected and unexpected inputs gracefully. Good luck!
+
+
+
+### Requirements:
+
+1. **Main Menu:**
+   - The program should start by displaying a menu with at least the following options:
+     1. Encode a File
+     2. Decode a File
+     3. Exit
+
+2. **File Selection:**
+   - The program should prompt the user to enter the path of the text file they wish to encode or decode. Optionally, you can implement a file selection prompt to make it easier for the user to choose the file.
+
+3. **Encoding and Decoding:**
+   - You have the freedom to choose how you want to encode and decode the text. Some possible ideas include:
+     - **Substitution Cipher:** Replace each character with another character.
+     - **Reversal Cipher:** Reverse the entire text.
+     - **Shift Cipher (Caesar Cipher):** Shift each character by a fixed number of positions in the ASCII table.
+     - **Custom Algorithm:** Feel free to create your own encoding method.
+   - The encoded file should be saved with a new file name to avoid overwriting the original file. For example, if the original file is `message.txt`, the encoded file could be `message_encoded.txt`.
+
+4. **File Writing:**
+   - After encoding or decoding, the program should save the output to a new text file. Ensure that the original file remains unchanged.
+
+
+5. **Exiting the Program:**
+   - If the user selects the "Exit" option from the main menu, the program should terminate gracefully.
+
+### Suggested Workflow:
+
+1. **Setup the Project:**
+   - Create a new Java project and add a class with a `main` method.
+   - Import the necessary classes: `Scanner`, `File`, and `FileWriter`.
+
+2. **Implement the Main Menu:**
+   - Use a loop to display the main menu and process the user's selection.
+   - Depending on the user's choice, call the appropriate method to encode or decode the file.
+
+3. **File Handling:**
+   - Use `Scanner` to read the contents of the selected file.
+   - Use `FileWriter` to write the encoded or decoded contents to a new file.
+
+4. **Encoding/Decoding Algorithms:**
+   - Implement your chosen encoding and decoding algorithms in separate methods.
+
+5. **Testing:**
+   - Thoroughly test your program with different files and scenarios to ensure it works as expected.
+
+### Bonus Challenges (Optional):
+- Add a feature that allows the user to specify a custom key for the encoding/decoding process.
+- Implement a basic file selection prompt for the file. 
+
+### Possible Example:
+
+```
+Welcome to the File Encoder/Decoder!
+------------------------------------
+1. Encode a File
+2. Decode a File
+3. Exit
+------------------------------------
+Please select an option: 1
+
+Enter the path of the file to encode: example.txt
+Encoding the file...
+
+File encoded successfully! The encoded file is saved as example_encoded.txt
+```
