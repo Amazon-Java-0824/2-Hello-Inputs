@@ -1,48 +1,7 @@
 # Hello Inputs
 
 ![](hello_inputs.png)
-# Table of Contents
 
-- [Standard Input (Scanner)](#standard-input-scanner)
-  - [Introduction to Standard Input (Scanner)](#introduction-to-standard-input-scanner)
-  - [Why Use Scanner?](#why-use-scanner)
-  - [Basic Concepts of Scanner](#basic-concepts-of-scanner)
-  - [Creating a Scanner Object](#creating-a-scanner-object)
-  - [Reading Different Data Types](#reading-different-data-types)
-    - [Reading a String](#reading-a-string)
-    - [Reading an Integer](#reading-an-integer)
-    - [Reading a Floating-Point Number](#reading-a-floating-point-number)
-  - [Important Notes on Scanner](#important-notes-on-scanner)
-  - [Practice Exercise: User Profile](#practice-exercise-user-profile)
-    - [Task Description](#task-description)
-    - [Bonus Challenges](#bonus-challenges)
-
-- [File Reader and File Writer](#file-reader-and-file-writer)
-  - [Introduction to File Reader and File Writer](#introduction-to-file-reader-and-file-writer)
-  - [Why Use File Reader and File Writer?](#why-use-file-reader-and-file-writer)
-  - [Basic Concepts of File Reader and File Writer](#basic-concepts-of-file-reader-and-file-writer)
-  - [Reading from a File using FileReader](#reading-from-a-file-using-filereader)
-  - [Writing to a File using FileWriter](#writing-to-a-file-using-filewriter)
-  - [Appending to a File](#appending-to-a-file)
-  - [Important Notes on FileReader and FileWriter](#important-notes-on-filereader-and-filewriter)
-  - [Practice Exercise: Simple Note Taker](#practice-exercise-simple-note-taker)
-    - [Task Description](#task-description-1)
-    - [Bonus Challenges](#bonus-challenges-1)
-
-- [Java Methods](#java-methods)
-  - [Introduction to Java Methods](#introduction-to-java-methods)
-  - [Why Use Java Methods?](#why-use-java-methods)
-  - [Basic Concepts of Java Methods](#basic-concepts-of-java-methods)
-  - [Defining a Method](#defining-a-method)
-  - [Method Parameters and Return Values](#method-parameters-and-return-values)
-    - [Method with Parameters](#method-with-parameters)
-    - [Method with Return Values](#method-with-return-values)
-  - [Void Methods](#void-methods)
-  - [Method Overloading](#method-overloading)
-  - [Important Notes on Java Methods](#important-notes-on-java-methods)
-  - [Practice Exercise: Simple Calculator](#practice-exercise-simple-calculator)
-    - [Task Description](#task-description-2)
-    - [Bonus Challenges](#bonus-challenges-2)
 
 # Standard Input (Scanner)
 
@@ -379,11 +338,6 @@ Remember to test your program thoroughly to handle various inputs and scenarios 
 Here’s a detailed exercise prompt for your bootcamp students:
 
 ---
-
-### Weekend optional exercise: File Encoder and Decoder Console Program
-
-**Objective:**  
-Your task is to create a console-based program that encodes and decodes text files. This program will prompt the user to choose whether they want to encode or decode a file and then perform the selected operation. You are free to design the encoding and decoding algorithms as you see fit, as long as the encoding process is reversible by your decoding process.
 
 
 # Java Methods
