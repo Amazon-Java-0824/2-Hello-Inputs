@@ -546,6 +546,10 @@ Create a simple calculator program with methods for addition, subtraction, multi
 
 Remember to test your methods thoroughly to ensure they handle all expected and unexpected inputs gracefully. Good luck!
 
+### Weekend optional exercise: File Encoder and Decoder Console Program
+
+**Objective:**  
+Your task is to create a console-based program that encodes and decodes text files. This program will prompt the user to choose whether they want to encode or decode a file and then perform the selected operation. You are free to design the encoding and decoding algorithms as you see fit, as long as the encoding process is reversible by your decoding process.
 
 
 ### Requirements:
